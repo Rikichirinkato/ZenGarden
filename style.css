@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Sumana');
+body{
+    margin: 0;
+}
+.page-wrapper{
+    background-color: #afe4aa;
+}
+header{
+    width: 90%;
+    padding: 30px 5%;
+    background: repeating-linear-gradient(-45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+header *{
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+}
+header h1{
+    font-size: 35px;
+}
+header h2{
+    font-size: 20px;
+}
+.summary{
+    width: 90%;
+    padding: 30px 5%;
+}
+.summary *{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.preamble{
+    width: 90%;
+    padding: 30px 5%;
+    border: 2px solid #878c31;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+a{
+    padding: 0 3px;
+    text-decoration: none;
+    background-color:  #afe4dd;
+    color: #101b2b;
+}
+.explanation, .participation, .benefits, .requirements{
+    padding: 0 10px;
+    border: 2px solid #878c31;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Sumana', serif;
+}
+.main{
+    width: 90%;
+    padding: 0 5%;
+}
+footer{
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 2px solid #878c31;
+    border-bottom: 2px solid #878c31;
+}
+footer *{
+    font-family: 'Sumana', serif;
+    font-size: 25px;
+    background-color: inherit;
+}
+.wrapper{
+    width: 80%;
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+.wrapper a{
+    background-color: inherit;
+    text-decoration: underline;
+    text-align: center;
+}
+.wrapper li{
+    list-style-type: none;
+}
+.wrapper ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper li, .wrapper h3{
+    text-align: center;
+}
+@media screen and (min-width:762px){
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .summary{
+        width: 90%;
+        padding: 30px 5%;
+    }
+    .summary *{
+        text-align: right;
+    }
+    .page-wrapper{
+        max-width: 992px;
+    }
+    .wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .wrapper ul, .wrapper li, .wrapper h3{
+        align-items:flex-end;
+        text-align: right;
+    }
+}
